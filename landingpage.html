@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            height: 1320px;
+            width: 100%;
+        }
+        .a{
+         position: absolute;
+         top: 0;
+         height: 500px;
+         width: 100%;
+         opacity: 0.8;
+        }
+        .b{
+            position: absolute;
+            top: 20px;
+            width: 50%;
+            margin-left: 15px;
+        }
+        li{
+            display: inline-block; 
+            padding: 10px 10px; 
+        }
+        li:hover{
+            color: white; 
+            text-decoration: underline;
+            transform: scale(1.1);
+            background: transparent;
+            cursor: pointer;
+            font-style: oblique;
+        }
+        .c{
+            position: absolute;
+            top: 90px;
+            left: 50px;
+            width: 35%;
+        }
+        h1{
+            position: absolute;
+            top: 40px;
+            left: 117px;
+            color: white;
+        }
+        .p1{
+            position: absolute;
+            top: 177px;
+            left: 60px;
+            color: white;
+        }
+        .p2{
+            position: absolute;
+            top: 115px;
+            left: 60px;
+            color: white;
+        }
+        #button{
+            position: absolute;
+            top: 257px;
+            left: 157px;
+            background-color: yellow;
+            color: black;
+            height: 40px;
+            width: 27%;
+            border-radius: 15px;
+            font-size: 15px;
+        }
+        .d{
+            position: absolute;
+            top: 500px;
+            width: 100%;
+            height: 400px;
+            background-color: rgb(157, 184, 235);
+        }
+       #d1{
+        position: absolute;
+        top: 420px;
+        height: 150px;
+        width: 18%;
+        left: 70px;
+        background-color: bisque;
+        border-radius: 15px;
+        border: 1px solid black;
+       }
+       #d4{
+        position: absolute;
+        top: 420px;
+        height: 150px;
+        width: 18%;
+        left: 70px;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid black;
+       } 
+       #d4:hover{
+        top: 350px;
+        border: 1px solid black;
+       }
+       #d2{
+        position: absolute;
+        top: 420px;
+        height: 150px;
+        width: 18%;
+        left: 450px;
+        background-color: bisque;
+        border-radius: 15px;
+        border: 1px solid black;
+       }
+       #d5{
+        position: absolute;
+        top: 420px;
+        height: 150px;
+        width: 18%;
+        left: 450px;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid black;
+       } 
+       #d5:hover{
+        top: 350px;
+        border: 1px solid black;
+       }  
+       #d3{
+        position: absolute;
+        top: 420px;
+        height: 150px;
+        width: 18%;
+        left: 850px;
+        background-color: bisque;
+        border-radius: 15px;
+        border: 1px solid black;
+       } 
+       #d6{
+        position: absolute;
+        top: 420px;
+        height: 150px;
+        width: 18%;
+        left: 850px;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid black;
+       } 
+       #d6:hover{
+        top: 350px;
+        border: 1px solid black;
+       } 
+      .b1{
+        position: absolute;
+        bottom: 15px;
+        width: 30%;
+        height: 35px;
+        left: 75px;
+        border-radius: 15px;
+        font-size: 15px;
+        background-color: maroon;
+        color:  white;
+      }
+      .b2{
+        position: absolute;
+        bottom: 15px;
+        width: 45%;
+        height: 35px;
+        left: 60px;
+        border-radius: 15px;
+        font-size: 15px;
+        background-color: maroon;
+        color:  white;
+      }
+      .b3{
+        position: absolute;
+        bottom: 15px;
+        width: 35%;
+        height: 35px;
+        left: 75px;
+        border-radius: 15px;
+        font-size: 15px;
+        background-color: maroon;
+        color:  white;
+      }
+      #ic{
+        position: absolute;
+        top: 55px;
+        left: 80px;
+      }
+      .text{
+        position: absolute;
+        top: 75px;
+        left: 65px;
+      }
+      .h1{
+       position: absolute;
+       top: 590px;
+       left: 34%;
+       font-size: 32px; 
+      }
+      .h2{
+       position: absolute;
+       top: 640px;
+       left: 28%;
+       font-size: 22px; 
+      }
+      .container{
+        position: absolute;
+        top: 700px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+       margin: 30px;
+       gap: 190px;
+      
+      }
+      .container2{
+        position: absolute;
+        top: 970px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+       margin: 30px;
+       gap: 170px;
+      }
+     .img1{
+        border-radius: 360px;
+     }
+     .img1:hover{
+       transform: scale(1.1);
+       border-radius: 360ppx;
+     }
+     .see{
+        position: absolute;
+        top: 240px;
+        height: 35px;
+        left: 42%;
+        width: 18%;
+        background-color: yellowgreen;
+        color: white;
+        border-radius: 20px;
+     }
+     .see:hover{
+        transform: scale(1.1);
+        text-transform: uppercase;
+     }
+     .grey{
+        position: absolute;
+        top: 1300px;
+        height: 170px;
+        width: 100%;
+        background-color: grey;
+     }
+     #ot{
+        position: absolute;
+        top: 85px;
+        left: 95px;
+        font-size: 55px;
+     }
+     .g1{
+        position: absolute;
+        top: 45px;
+        left: 250px;
+     }
+     .g2{
+        position: absolute;
+        top: 45px;
+        left: 530px;
+     }
+     .g3{
+        position: absolute;
+        top: 45px;
+        left: 770px;
+     }
+     .g4{
+        position: absolute;
+        top: 45px;
+        left: 1070px;
+     }
+    </style>
+    <title>FIND YOUR PET</title>
+</head>
+<body>
+    <div class="main">
+        <img src="cat.jpeg" class="a">
+        <div class="b">
+            <ul>
+                <i class="fa-solid fa-paw fa-2xl"></i>
+                <li>HOME</li>
+                <li>PETS</li>
+                <li>HELP</li>
+                <li>ABOUT US</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div class="c">
+         <h1>Find your pet</h1>
+         <p class="p1">In our shelter there are several pets who wait only for you. they want a lovely family and a cosy home </p>
+         <br>
+         <p class="p2">please help them to find a new family,who will love them!</p>
+         <br><br>
+         <button id="button">Let's Adopt</button>
+        </div>
+        <div id="d1"><button class="b1">ADOPT</button></div>
+        <div id="d2"><button class="b2">VOLUNTEER</button></div>
+        <div id="d3"><button class="b3">DONATE</button></div>
+        <div id="d4"><i id="ic" class="fa-solid fa-heart-circle-plus fa-2xl" style="color: #c01b1b;"></i><p class="text">Adopt a pet</p></div>
+        <div id="d5"><i id="ic" class="fa-solid fa-handshake-angle fa-2xl" style="color: #b71515;"></i><p class="text">Be a volunteer</p></div>
+        <div id="d6"><i id="ic" class="fa-solid fa-circle-dollar-to-slot fa-2xl" style="color: #ca2b2b;"></i><p class="text">Donate for them</p></div>
+       </div>
+        <p class="h1"><b>Who are you waiting for?</b></p>
+        <p class="h2">if you want to know more about pet just click on it's box</p>
+        <div class="container">
+         <img src="d1.jpeg" class="img1">
+         <img src="d2.jpeg" class="img1">
+         <img src="d3.jpeg" class="img1">
+         </div>
+         <div class="container2">
+         <img src="d4.jpeg" class="img1">
+         <img src="d5.jpeg" class="img1">
+         <img src="d6.jpeg" class="img1">
+         <button class="see">SEE MORE</button>
+        </div>
+    </div>
+    <div class="grey">
+        <i id="ot" class="fa-solid fa-paw fa-beat-fade fa-2xl" style="color: #fafafa;"></i>
+         <div class="g1">
+            <b>Address</b>
+            <p>street no. - 35C</p>
+            <p>near spring museum sadar bazar</p>
+            <p>shanti nagar, Delhi</p>
+         </div>
+         <div class="g2">
+            <b>CONTACT</b>
+            <p>phone no - 2258964731</p>
+            <p>petshop@gmail.com</p>
+         </div>
+         <div class="g3">
+            <b>OPENING HOURS</b>
+            <p>morning - 8:00AM to 12:30PM</p>
+            <p>evening - 4:00PM to 8:00PM</p>
+         </div>
+         <div class="g4">
+            <b>SUPPORTES</b>
+            <p>EMMA</p>
+            <p>JOHN</p>
+            <p>TOM</p>
+         </div>
+    </div>    
+</body>
+</html>
